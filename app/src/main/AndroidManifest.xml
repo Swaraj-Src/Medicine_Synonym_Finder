@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicinesynonymfinder">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACTION_CALL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view_transa_info"></activity>
+        <activity android:name=".view_transaction" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".medical_location"
+            android:label="@string/title_activity_medical_location" />
+        <activity android:name=".search_medi_info" />
+        <activity android:name=".view_user_info" />
+        <activity android:name=".view_medi_info" />
+        <activity android:name=".show_buy_medi_info" />
+        <activity android:name=".show_buy_medicine" />
+        <activity android:name=".buy_medicine" />
+        <activity android:name=".register_user" />
+        <activity android:name=".show_remove_medicine" />
+        <activity android:name=".Search_medicine" />
+        <activity android:name=".update_profile" />
+        <activity android:name=".search_remove_medicine" />
+        <activity android:name=".show_update_medicine" />
+        <activity android:name=".search_update_medicine" />
+        <activity android:name=".add_medicine" />
+        <activity android:name=".show_update_medical" />
+        <activity android:name=".show_remove_medical" />
+        <activity android:name=".view_user" />
+        <activity android:name=".remove_medical" />
+        <activity android:name=".search_remove_medical" />
+        <activity android:name=".view_medical" />
+        <activity android:name=".update_medical" />
+        <activity android:name=".search_update_medical" />
+        <activity android:name=".add_medical" />
+        <activity android:name=".register" />
+        <activity android:name=".owner" />
+        <activity android:name=".MedicalOwner" />
+        <activity android:name=".admin" />
+        <activity android:name=".user" />
+        <activity android:name=".home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

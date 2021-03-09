@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:padding="7dp"
+    android:orientation="vertical"
+    tools:context=".buy_medicine">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        android:text="Buy Medicine"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+
+        android:ems="10"
+        android:hint=" Full Name"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint=" Address"
+        android:inputType="text"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint=" contact"
+
+        android:inputType="number"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint=" Quntity"
+
+        android:inputType="text"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+    <TextView
+        android:id="@+id/name_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint=" Name Medicine"
+
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radiogroup"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+    <RadioButton
+        android:id="@+id/cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cash On Delivery" />
+
+    <RadioButton
+        android:id="@+id/online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit/Debit/ATM card" />
+
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buy_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bbuttonback"
+
+        android:text=" Place order"
+
+        />
+
+
+</LinearLayout>
